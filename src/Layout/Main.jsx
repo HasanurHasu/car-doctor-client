@@ -1,10 +1,12 @@
-import { Outlet } from 'react-router-dom'
-import Navbar from '../Pages/Shared/Navbar/Navbar';
-import Footer from '../Pages/Shared/Footer/Footer';
+import { Outlet } from "react-router-dom";
+import Footer from "../pages/Shared/Footer/Footer";
+import NavBar from "../pages/Shared/NavBar/NavBar";
+
+
 const Main = () => {
     return (
-        <div className='max-w-6xl mx-auto'>
-            <Navbar></Navbar>
+        <div>
+            <NavBar></NavBar>
             <Outlet></Outlet>
             <Footer></Footer>
         </div>
